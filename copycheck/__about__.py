@@ -8,7 +8,7 @@
    Information about the package.
 '''
 
-__title__ = 'Copycheck'
+__title__ = 'copycheck'
 __description__ = 'Check if files have a proper copyright header.'
 __url__ = 'https://github.com/aicis/copycheck'
 __version_info__ = ('1', '0', '0')

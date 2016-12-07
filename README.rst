@@ -1,24 +1,27 @@
+Copycheck
+=========
+
 Copyright 2016 Janus Friis Nielsen.
 
 This file is part of Copycheck.
 
 Introduction
 ------------
-Copycheck inspects the beginning of all files reports any file without a copyright
+*Copycheck* inspects the beginning of all files reports any file without a copyright
 header.
 
-The recognition of copyright headers is very rudimentary. Copycheck scans the 
+The recognition of copyright headers is very rudimentary. *Copycheck* scans the 
 10 first lines for occurrences of the word "copyright" in any casing.
 
 
 Installation
 ------------
 
-copycheck is available for install through `PyPI`_::
+*copycheck* is available for install through `PyPI`_::
 
   pip install copycheck
 
-copycheck can also be installed from source with::
+*copycheck* can also be installed from source with::
 
   python setup.py install
 
@@ -89,7 +92,7 @@ Add copyright header to all Python files available from current directory"
 .. code-block:: bash
 
     $ copycheck check . | sort | grep "\.py" | xargs -L1 sed -i '' '1i\
-      /\ Copyright 2016 (c) Janus Friis Nielsen, all rights reserved. \/\
+      # Copyright 2016 (c) Janus Friis Nielsen, all rights reserved. \
       \
       '
 
@@ -97,15 +100,15 @@ Add copyright header to all Python files available from current directory"
 License
 -------
 
-copycheck is licensed under the `Mozilla Public License Version 2.0`_. See
+*copycheck* is licensed under the `Mozilla Public License Version 2.0`_. See
 `LICENSE`_ or the `FAQ`_ for more information.
 
-In summary, you may use copycheck with any closed or open source project
+In summary, you may use *copycheck* with any closed or open source project
 without affecting the license of the larger work so long as you:
 
 - give credit where credit is due,
 
-- and release any custom changes made to copycheck.
+- and release any custom changes made to *copycheck*.
 
 .. _`Mozilla Public License Version 2.0`: http://www.mozilla.org/MPL/2.0
 .. _`LICENSE`: LICENSE
@@ -115,7 +118,7 @@ without affecting the license of the larger work so long as you:
 Source
 ------
 
-The source code for copycheck is available from the GitHub repo
+The source code for *copycheck* is available from the GitHub repo
 `janusdn/copycheck`_.
 
 .. _`janusdn/copycheck`: https://github.com/janusdn/copycheck
@@ -214,19 +217,19 @@ Register:
 
 .. code-block:: bash
     
-    $ twine register -u ${PYPI_TEST_USERNAME} -p ${PYPI_TEST_PASSWORD} -r https://testpypi.python.org/pypi dist/copycheck-6.6.6-py3-none-any.whl
+    $ twine register -u ${PYPI_TEST_USERNAME} -p ${PYPI_TEST_PASSWORD} -r https://testpypi.python.org/pypi dist/Copycheck-6.6.6-py3-none-any.whl
 
 Upload
 
 .. code-block:: bash
     
-    $ twine upload -u ${PYPI_TEST_USERNAME} -p ${PYPI_TEST_PASSWORD} -r https://testpypi.python.org/pypi dist/copycheck-6.6.6-py3-none-any.whl
+    $ twine upload -u ${PYPI_TEST_USERNAME} -p ${PYPI_TEST_PASSWORD} -r https://testpypi.python.org/pypi dist/Copycheck-6.6.6-py3-none-any.whl
 
 Goto:
 
 .. code-block:: bash
     
-    $ https://testpypi.python.org/pypi/copycheck/6.6.6
+    $ https://testpypi.python.org/pypi/Copycheck/6.6.6
 
 An check that everything looks nice.
 
@@ -262,5 +265,5 @@ And check that everything looks nice.
 
 Thanks
 ------
-A bug thank you goes to the author of the pathspec package. Using pathspec
+A bug thank you goes to the author of the *pathspec* package. Using *pathspec* 
 made it a lot easier to build this tool.

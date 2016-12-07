@@ -1,2 +1,7 @@
-README.rst
 samples/
+*.rst
+.git/
+*.egg-info/
+output.html
+LICENSE
+setup.cfg

@@ -30,6 +30,7 @@ setup(
     url=about['__url__'],
     description=about['__description__'],
     long_description=readme + "\n\n" + changes,
+    setup_requires=['setuptools_scm'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',

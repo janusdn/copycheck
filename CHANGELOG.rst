@@ -1,4 +1,3 @@
-/* Copyright 2016 (c) Sepior Aps, all rights reserved. */
 Change Log
 ==========
 

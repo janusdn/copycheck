@@ -1,0 +1,5 @@
+Copycheck.egg-info/
+build/
+copycheck/__pycache__/
+dist/
+output.html
