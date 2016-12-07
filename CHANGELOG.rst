@@ -10,6 +10,13 @@ See http://keepachangelog.com for information on how to update this file.
 [Unreleased]
 ------------
 
+[1.0.1]
+-------
+
+Added
+~~~~~
+- Initial version
+
 [1.0.0]
 -------
 

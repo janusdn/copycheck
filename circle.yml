@@ -1,0 +1,26 @@
+# Copyright 2016 (c) Janus Friis Nielsen, all rights reserved.
+
+machine:
+    environment:
+        LC_ALL: en_US.UTF-8
+    python:
+        version: 3.5.1
+
+dependencies:
+    override:
+        # Export version
+        - echo "export VERSION=\"$(git describe --tags)\"" >> ~/.circlerc
+        # Setup Python dependencies
+        - pip install -r requirements.txt
+        # Installing project
+        - git fetch --prune --tags
+        # Create Wheel for distribution.
+        - make
+test:
+    override:
+        - make test
+deployment:
+    release_tag:
+        tag: /[0-9]+(\.[0-9]+)*/
+        commands:
+            - make pypi_upload

@@ -5,6 +5,10 @@ Copyright 2016 Janus Friis Nielsen.
 
 This file is part of Copycheck.
 
+.. image:: https://circleci.com/gh/janusdn/copycheck/tree/master.svg?style=shield&circle-token=4112427381753afc2f073a61fba23263d1f86d13
+    :target: https://circleci.com/gh/janusdn/copycheck/tree/master
+
+
 Introduction
 ------------
 *Copycheck* inspects the beginning of all files reports any file without a copyright
