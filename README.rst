@@ -3,7 +3,7 @@ Copycheck
 
 Copyright 2016 Janus Friis Nielsen.
 
-This file is part of Copycheck.
+This file is part of *copycheck*.
 
 .. image:: https://circleci.com/gh/janusdn/copycheck/tree/master.svg?style=shield&circle-token=4112427381753afc2f073a61fba23263d1f86d13
     :target: https://circleci.com/gh/janusdn/copycheck/tree/master
@@ -23,7 +23,9 @@ Installation
 
 *copycheck* is available for install through `PyPI`_::
 
-  pip install copycheck
+.. code-block:: bash
+
+  $ pip install copycheck
 
 *copycheck* can also be installed from source with::
 
@@ -174,7 +176,7 @@ environment during development.
     
     $ pip install -e .
 
-This allows you to change the code and test copycheck
+This allows you to change the code and test *copycheck*
 directly.
 
 
