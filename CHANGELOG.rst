@@ -11,7 +11,15 @@ See http://keepachangelog.com for information on how to update this file.
 ------------
 
 
-[1.0.1]
+[1.0.3]
+-------
+
+Fixed
+~~~~~
+- Typos and formatting in README
+
+
+[1.0.2]
 -------
 
 Fixed

@@ -21,15 +21,17 @@ The recognition of copyright headers is very rudimentary. *Copycheck* scans the
 Installation
 ------------
 
-*copycheck* is available for install through `PyPI`_::
+*copycheck* is available for install through `PyPI`_:
 
 .. code-block:: bash
 
   $ pip install copycheck
 
-*copycheck* can also be installed from source with::
+*copycheck* can also be installed from source with:
 
-  python setup.py install
+.. code-block:: bash
+
+  $ python setup.py install
 
 .. _`PyPI`: http://pypi.python.org/pypi/copycheck
 .. _`setuptools`: https://pypi.python.org/pypi/setuptools
@@ -58,6 +60,14 @@ The tool will show a description of usage when given the
         -v, --verbose  Enable verbose output
         --debug DEBUG  Enable debug output
 
+Check all files in current directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+    $ copycheck check .
+
+
 Check all files in a directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -81,6 +91,7 @@ You can put a files called `.copycheckignore` in the base directory of your
 project.
 
 The syntax of the files is Git wildmatch. The same as used in .gitignore.
+
 
 Get files sorted
 ~~~~~~~~~~~~~~~~
@@ -194,6 +205,7 @@ Do the following to release a new version:
 7. Bump version in __about__.py
 8. Run `./release.sh 6.6.6`
 
+
 Upload to Pypi
 --------------
 First, perform a test upload to verify everything is nice and dandy.
@@ -252,6 +264,7 @@ Test if it installs (do it in a different environment):
     
     $ pip install -i https://testpypi.python.org/pypi copycheck
 
+
 Real upload to Pypi
 ~~~~~~~~~~~~~~~~~~~
 
@@ -268,6 +281,7 @@ Goto:
     $ https://pypi.python.org/pypi/copycheck/6.6.6
 
 And check that everything looks nice.
+
 
 Thanks
 ------
